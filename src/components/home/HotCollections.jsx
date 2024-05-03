@@ -85,7 +85,7 @@ return (
                 {collection.map((_, id) => (
                   <div className="nft_coll" key={id}>
                     <div className="nft_wrap">
-                      <Link to="/item-details">
+                      <Link to={`/item-details/${_.nftId}`}>
                         <img
                           src={_.nftImage}
                           className="lazy img-fluid"
